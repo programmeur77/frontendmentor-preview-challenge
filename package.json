@@ -1,0 +1,23 @@
+{
+  "name": "3-cards-preview",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "devStart": "sass --watch style/index.scss style/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/programmeur77/frontendmentor-preview-challenge.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/programmeur77/frontendmentor-preview-challenge/issues"
+  },
+  "homepage": "https://github.com/programmeur77/frontendmentor-preview-challenge#readme",
+  "devDependencies": {
+    "sass": "^1.69.5"
+  }
+}
