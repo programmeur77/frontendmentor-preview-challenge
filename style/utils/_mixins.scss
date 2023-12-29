@@ -1,0 +1,16 @@
+@mixin gap-flex-column($gap: 1.5rem, $display: flex, $direction: column) {
+  display: $display;
+  @if $display == 'flex' {
+    flex-direction: $direction;
+  }
+  gap: $gap;
+}
+
+@mixin card-bgColor-bgImage($bg-color: $bg-color, $bg-image: $url) {
+  background-color: $bg-color;
+  background-image: $url;
+  background-repeat: no-repeat;
+  background-position: top left;
+  left: 50px;
+  top: 30px;
+}
