@@ -1,5 +1,12 @@
 .card-grid {
+  width: 50%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: fit-content;
   .card {
+    padding: 30px;
+    @include gap-flex-column(1.5rem);
+
     &--orange {
       background-color: $bright-orange;
       background-image: url('./../../images/icon-sedans.svg');
@@ -8,6 +15,10 @@
       left: 50px;
       top: 10px;
       border-radius: 10px 0 0 10px;
+
+      @media screen and (min-width: 360px) and (max-width: 1339px) {
+        border-radius: 10px 10px 0 0;
+      }
     }
 
     &--light-green {
@@ -18,6 +29,7 @@
       left: 50px;
       background-color: $dark-cyan;
     }
+
     &--dark-green {
       background-image: url('./../../images/icon-luxury.svg');
       background-repeat: no-repeat;
@@ -26,11 +38,11 @@
       left: 50px;
       background-color: $very-dark-cyan;
       border-radius: 0 10px 10px 0;
+
+      @media screen and (min-width: 360px) and (max-width: 1339px) {
+        border-radius: 0 0 10px 10px;
+      }
     }
-  }
-  .card {
-    padding: 30px;
-    @include gap-flex-column(1.5rem);
 
     &__title {
       margin-left: 30px;
@@ -48,11 +60,11 @@
 
     &__submit {
       margin-left: 30px;
-      width: 13%;
       padding: 13px;
       border-radius: 30px;
       border: none;
       background-color: #fff;
+      font-size: 15px;
 
       &--orange {
         color: $bright-orange;
@@ -68,10 +80,15 @@
 
       &:hover {
         background-color: transparent;
-        border: 3px solid white;
+        border: 2px solid #fff;
         color: #fff;
         cursor: pointer;
       }
     }
+  }
+
+  @media screen and (min-width: 360px) and (max-width: 1339px) {
+    grid-template-columns: 1fr;
+    width: 90%;
   }
 }
