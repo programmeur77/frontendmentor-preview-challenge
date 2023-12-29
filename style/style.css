@@ -11,6 +11,75 @@ body {
   background-color: hsl(0, 0%, 95%);
   display: grid;
   place-items: center;
+  font-size: 15px;
+}
+
+.card-grid .card--orange {
+  background-color: hsl(31, 77%, 52%);
+  background-image: url("./../../images/icon-sedans.svg");
+  background-repeat: no-repeat;
+  position: top left;
+  left: 50px;
+  top: 10px;
+  border-radius: 10px 0 0 10px;
+}
+.card-grid .card--light-green {
+  background-image: url("./../../images/icon-suvs.svg");
+  background-repeat: no-repeat;
+  position: top left;
+  top: 30px;
+  left: 50px;
+  background-color: hsl(184, 100%, 22%);
+}
+.card-grid .card--dark-green {
+  background-image: url("./../../images/icon-luxury.svg");
+  background-repeat: no-repeat;
+  position: top left;
+  top: 30px;
+  left: 50px;
+  background-color: hsl(179, 100%, 13%);
+  border-radius: 0 10px 10px 0;
+}
+.card-grid .card {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.card-grid .card__title {
+  margin-left: 30px;
+  text-transform: uppercase;
+  font-family: "Big Shoulders Display", sans-serif;
+  font-size: 2rem;
+  color: #fff;
+}
+.card-grid .card__content {
+  margin-left: 30px;
+  font-family: "Lexend Deca", sans-serif;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+.card-grid .card__submit {
+  margin-left: 30px;
+  width: 13%;
+  padding: 13px;
+  border-radius: 30px;
+  border: none;
+  background-color: #fff;
+}
+.card-grid .card__submit--orange {
+  color: hsl(31, 77%, 52%);
+}
+.card-grid .card__submit--light-green {
+  color: hsl(184, 100%, 22%);
+}
+.card-grid .card__submit--dark-green {
+  color: hsl(179, 100%, 13%);
+}
+.card-grid .card__submit:hover {
+  background-color: transparent;
+  border: 3px solid white;
+  color: #fff;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */
