@@ -2,3 +2,6 @@
 .prettierrc
 package-lock.json
 node_modules/
+
+# SASS auto-generated files
+style/style.css.map
