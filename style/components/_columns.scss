@@ -1,0 +1,77 @@
+.card-grid {
+  .card {
+    &--orange {
+      background-color: $bright-orange;
+      background-image: url('./../../images/icon-sedans.svg');
+      background-repeat: no-repeat;
+      position: top left;
+      left: 50px;
+      top: 10px;
+      border-radius: 10px 0 0 10px;
+    }
+
+    &--light-green {
+      background-image: url('./../../images/icon-suvs.svg');
+      background-repeat: no-repeat;
+      position: top left;
+      top: 30px;
+      left: 50px;
+      background-color: $dark-cyan;
+    }
+    &--dark-green {
+      background-image: url('./../../images/icon-luxury.svg');
+      background-repeat: no-repeat;
+      position: top left;
+      top: 30px;
+      left: 50px;
+      background-color: $very-dark-cyan;
+      border-radius: 0 10px 10px 0;
+    }
+  }
+  .card {
+    padding: 30px;
+    @include gap-flex-column(1.5rem);
+
+    &__title {
+      margin-left: 30px;
+      text-transform: uppercase;
+      font-family: $font-fam-big-shoulders;
+      font-size: 2rem;
+      color: #fff;
+    }
+
+    &__content {
+      margin-left: 30px;
+      font-family: $font-fam-lexend;
+      color: $transparent-white;
+    }
+
+    &__submit {
+      margin-left: 30px;
+      width: 13%;
+      padding: 13px;
+      border-radius: 30px;
+      border: none;
+      background-color: #fff;
+
+      &--orange {
+        color: $bright-orange;
+      }
+
+      &--light-green {
+        color: $dark-cyan;
+      }
+
+      &--dark-green {
+        color: $very-dark-cyan;
+      }
+
+      &:hover {
+        background-color: transparent;
+        border: 3px solid white;
+        color: #fff;
+        cursor: pointer;
+      }
+    }
+  }
+}
